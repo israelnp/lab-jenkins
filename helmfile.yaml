@@ -1,0 +1,15 @@
+repositories:
+  - name: jenkins
+    url: https://charts.jenkins.io
+
+
+releases:
+
+- name: jenkins
+  namespace: jenkins
+  createNamespace: true
+  chart: jenkins/jenkins
+  version: 5.8.5
+  values:
+    - values/jenkins/values.yaml
+
